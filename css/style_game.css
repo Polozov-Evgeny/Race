@@ -1,0 +1,230 @@
+html, body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/road.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.player_select1 {
+    background: url(../img/player1.png) no-repeat;
+    width: 280px;
+    height: calc(280px * 384 / 639);
+    background-size:cover;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+}
+
+.player_select2 {
+    background: url(../img/player2.png) no-repeat;
+    width: 280px;
+    height: calc(280px * 384 / 639);
+    background-size:cover;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+}
+
+#enemy_fire {
+    background: url(../img/fire.gif) no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size:cover;
+    z-index: 2;
+}
+
+#stone {
+    background: url(../img/stone.png) no-repeat;
+    width: 100px;
+    height: calc(100px * 894 / 894);
+    background-size:cover;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+#barrel {
+    background: url(../img/barrel.png) no-repeat;
+    width: calc(140px * 407 / 599);
+    height: 140px;
+    background-size:cover;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+#cone {
+    background: url(../img/cone.png) no-repeat;
+    width: calc(100px * 1200 / 1409);
+    height: 100px;
+    background-size:cover;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    }
+
+#enemy1 {
+    background: url(../img/enemy1.png) no-repeat;
+    width: 260px;
+    height: calc(260px * 258 / 494);
+    background-size:cover;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+#enemy2 {
+    background: url(../img/enemy2.png) no-repeat;
+    width: 260px;
+    height: calc(260px * 258 / 494);
+    background-size:cover;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.line {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 15px;
+    background: rgb(211, 211, 211);
+    top: 50%;
+    right: 0;
+}
+
+.scoreboard {
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    right: 0px;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(0, 0, 0);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#time {
+    width: 120px;
+    color: rgb(255, 0, 0);
+    box-shadow: 0 0 15px #ffffff, 0 0 30px rgb(255, 0, 0);
+}
+
+
+#score {
+    right: 160px;
+    width: 120px;
+    color: rgb(255, 255, 0);
+    box-shadow: 0 0 15px #ffffff, 0 0 30px rgb(255, 255, 0);
+    transition: transform 1s;
+}
+
+#score_scale {
+    right: 160px;
+    width: 120px;
+    transform: scale(1.1);
+    color: rgb(255, 170, 0);
+    box-shadow: 0 0 15px #ffffff, 0 0 30px rgb(255, 170, 0);
+}
+
+#life {
+    right: 320px;
+    width: 120px;
+    color: rgb(0, 200, 0);
+    box-shadow: 0 0 15px #ffffff, 0 0 30px rgb(0, 200, 0);
+    transition: transform 1s;
+}
+
+#life_scale {
+    right: 320px;
+    width: 120px;
+    transform: scale(1.1);
+    color: rgb(255, 0, 200);
+    box-shadow: 0 0 15px #ffffff, 0 0 30px rgb(255, 0, 200);
+}
+
+#level {
+    right: 480px;
+    width: 120px;
+    color: rgb(0, 60, 255);
+    box-shadow: 0 0 15px #ffffff, 0 0 30px  rgb(0, 60, 255);
+}
+
+p1 {
+    display: block;
+    width: 75%;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 0);
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    padding: 30px;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 0);
+    font-family: sans-serif;
+    box-shadow: 0 0 10px #ffffff, 0 0 40px rgb(255, 255, 0);
+    font-size: 10vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p2 {
+    display: block;
+    width: 65%;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(0, 200, 0);
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    padding: 30px;
+    border-radius: 20px;
+    border: 5px solid  rgb(0, 200, 0);
+    font-family: sans-serif;
+    box-shadow: 0 0 10px #ffffff, 0 0 40px rgb(0, 200, 0);
+    font-size: 5vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#btnRestart {
+    display: block;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: rgb(215, 215, 215);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    font-size: 3vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#btnRestart:hover {
+    background-color: rgb(255, 255, 0);
+}

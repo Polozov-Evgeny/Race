@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/background_start.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row_name {
+    height: 95vh;
+}
+
+.row_git {
+    height: 5vh;
+}
+
+a img {
+    margin-top: 3%;
+}
+
+a img:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 30px rgb(255, 0, 0);
+}
+
+a img:active {
+    box-shadow: 0 0 10px #ffffff, 0 0 30px rgb(255, 255, 0);
+}
+
+h1 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 0);
+    padding: 25px;
+    border-radius: 100px 5px;
+    border: 5px solid rgb(255, 255, 0);
+    font-family: sans-serif;
+    box-shadow: 0 0 10px #ffffff, 0 0 40px rgb(255, 255, 0);
+    font-size: 6vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 5%;
+}
+
+.my_btn {
+    background-color: rgba(215, 215, 215, 0.9);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    width:75%;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    font-size: 3vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 4%;
+}
+
+.my_btn:hover {
+    background-color: rgba(255, 255, 0, 0.9);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+h5 {
+    color:rgba(0, 0, 0, 1);
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 3vh;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(255, 255, 0, 1);
+}
+
+h5 a {
+    color:rgba(0, 0, 0, 1);
+}
+
+h5 a:hover {
+    color:rgba(0, 0, 0, 1);
+    text-shadow: 0 0 5px rgba(255, 0, 0, 1);
+    text-decoration: none;
+}

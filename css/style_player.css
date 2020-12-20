@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/background_player.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: rgb(255, 255, 0);
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+    font-family: sans-serif;
+    font-size: 5vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3%;
+}
+
+img {
+    margin-top: 5vh;
+    width: 25vw;
+}
+
+img:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 30px rgb(255, 0, 0);
+}
+
+img:active {
+    box-shadow: 0 0 10px #ffffff, 0 0 30px rgb(255, 255, 0);
+}
+
+#img_select {
+    box-shadow: 0 0 10px #ffffff, 0 0 30px rgb(0, 200, 0);
+}
+
+
+h5 {
+    margin-top: 10vh;
+}
+
+h5 a {
+    color: rgb(255, 255, 0);
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 3vh;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h5 a:hover {
+    color:rgb(0, 0, 0);
+    text-shadow: 0 0 5px rgba(255, 0, 0);
+    text-decoration: none;
+}
