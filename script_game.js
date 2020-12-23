@@ -118,18 +118,25 @@ function startTimer() {
     let timeID = setInterval(function() {
         setting.timeSet--;
         time.textContent = 'TIME: ' + setting.timeSet;
-        if (setting.lifeSet === 0) {
+        if (setting.lifeSet === 0 && setting.timeSet !== 0) {
             SOUNDGAMEOVER.play();
             SOUNDGAMEOVER.volume = 0.2;
             clearInterval(timeID);
             gameOver.classEndGo();
         }
-        if (setting.timeSet === 0) {
+        if (setting.timeSet === 0 && setting.lifeSet !== 0) {
             SOUNDWINGAME.play();
             SOUNDWINGAME.volume = 0.2;
             clearInterval(timeID);
             winGame.classEndGo();
         }
+        if (setting.timeSet === 0 && setting.lifeSet === 0) {
+            SOUNDGAMEOVER.play();
+            SOUNDGAMEOVER.volume = 0.2;
+            clearInterval(timeID);
+            gameOver.classEndGo();
+        }
+
 
         function levelUp() {
                 if (setting.timeSet % 20 == 0){
